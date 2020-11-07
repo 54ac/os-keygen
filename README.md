@@ -6,7 +6,7 @@ This is an old-school key generator for outdated operating systems from the 90s.
 
 ### What are some of the main features?
 
-- Uses [98.css](https://github.com/jdan/98.css/) for a realistic depiction of the UI of the days of old,
+- Uses [98.css](https://github.com/jdan/98.css/) and the [IBM EGA 8x14](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_ega_8x14) font for a realistic depiction of the UI of the days of old,
 - Uses vanilla Javascript to generate the requested keys (fully client-side).
 
 ### What's the point?
