@@ -49,6 +49,15 @@ body {
 	justify-content: flex-end;
 }
 
+.url {
+	width: 100%;
+	margin: 0;
+}
+
+a {
+	color: black;
+}
+
 input[type="text"] {
 	font-family: "IBM EGA 8x14", monospace;
 	font-size: 14px;
