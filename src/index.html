@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="key generator for abandoned software" />
+		<title>the keygen</title>
+	</head>
+	<body>
+		<div id="container">
+			<div class="window">
+				<div class="title-bar">
+					<div class="title-bar-text">Setup</div>
+				</div>
+				<div class="window-body">
+					<section class="field-row">
+						<div id="iconContainer">
+							<p id="icon">💿</p>
+						</div>
+						<div id="dialogContainer">
+							<div id="mainDialog">
+								<div class="field-row">
+									<p>
+										Which type of key do you need?
+									</p>
+								</div>
+								<div class="field-row">
+									<input id="10" type="radio" name="keyType" checked />
+									<label for="10">10-digit "CD Key"</label>
+								</div>
+								<div class="field-row">
+									<input id="11" type="radio" name="keyType" />
+									<label for="11">11-digit "CD Key"</label>
+								</div>
+								<div class="field-row">
+									<input id="20" type="radio" name="keyType" />
+									<label for="20">20-digit "Product ID" &#40;OEM&#41;</label>
+								</div>
+								<div class="field-row">
+									<input id="beta" type="radio" name="keyType" />
+									<label for="beta">Beta Site ID &amp; Password</label>
+								</div>
+								<div
+									id="buildContainer"
+									class="field-row-stacked"
+									style="visibility: hidden;"
+								>
+									<label for="buildNo">Beta build number:</label>
+									<select id="buildNo">
+										<option value="73f">73f</option>
+										<option value="73g">73g</option>
+										<option value="81">81</option>
+										<option value="99">99-116</option>
+										<option value="122">122-189</option>
+										<option value="216">216-275</option>
+									</select>
+								</div>
+								<section class="field-row buttons">
+									<button disabled>&lt; Back</button>
+									<button id="mainNextButton">Next &gt;</button>
+								</section>
+							</div>
+
+							<div id="keyDialog" style="display: none;">
+								<p>
+									Your <span id="keyDigitNo"></span> &quot;<span
+										class="keyType"
+									></span
+									>&quot; is located in the space below. It can be used as a
+									replacement for the number found on
+									<span id="keyLocation"></span>.
+								</p>
+								<div id="keyContainer" class="field-row-stacked">
+									<label for="keyTextBox"><span class="keyType"></span>:</label>
+									<input id="keyTextBox" type="text" readonly />
+								</div>
+							</div>
+
+							<div id="betaDialog" style="display: none;">
+								<p>
+									Your Beta Site ID &amp; Password are located in the space
+									below. They can be used as a replacement for the credentials
+									originally provided by the company.
+								</p>
+								<div id="betaContainer" class="field-row-stacked">
+									<div class="field-row">
+										<label for="betaIdTextBox">Beta Site ID:</label>
+										<input id="betaIdTextBox" type="text" readonly />
+									</div>
+									<div class="field-row">
+										<label for="betaPasswordTextBox">Password:</label>
+										<input id="betaPasswordTextBox" type="text" readonly />
+									</div>
+								</div>
+							</div>
+
+							<section
+								id="keyButtons"
+								class="field-row buttons"
+								style="display: none;"
+							>
+								<button id="keyBackButton">&lt; Back</button>
+								<button id="newKeyButton">New Key</button>
+							</section>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
