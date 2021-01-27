@@ -36,7 +36,10 @@ const dateNo = () => {
 	).slice(-3);
 
 	const yearNo = (() => {
-		const third = 4;
+		const third = today
+			.getFullYear()
+			.toString()
+			.slice(-1);
 
 		if (third >= 5 && third <= 9) {
 			return "9" + third;
