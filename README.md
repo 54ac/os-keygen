@@ -2,12 +2,12 @@
 
 ### What is this?
 
-This is an old-school key generator for outdated operating systems from the 90s. Generates 10-digit and 11-digit CD keys, 20-digit OEM Product IDs, and Beta Site IDs with passwords. Made in Javascript, based on [Athlon's boilerplate](https://github.com/WeAreAthlon/frontend-webpack-boilerplate).
+This is an old-school key generator for outdated operating systems from the 90s. Generates 10-digit and 11-digit CD keys, 20-digit OEM Product IDs, and Beta Site IDs with passwords. Made in Javascript.
 
 ### What are some of the main features?
 
 - Uses [98.css](https://github.com/jdan/98.css/) and the [IBM EGA 8x14](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_ega_8x14) font for a realistic depiction of the UI of the days of old,
-- Uses vanilla Javascript to generate the requested keys (fully client-side).
+- Uses vanilla Javascript and [md4.js](http://lig-membres.imag.fr/donsez/cours/exemplescourstechnoweb/js_securehash/md4src.html) to generate the requested keys (fully client-side).
 
 ### What's the point?
 

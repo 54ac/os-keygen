@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="key generator for abandoned software" />
+		<meta name="theme-color" content="#008080" />
+		<link rel="stylesheet" href="main.css" />
 		<title>the keygen</title>
 	</head>
 	<body>
@@ -20,9 +22,7 @@
 						<div id="dialogContainer">
 							<div id="mainDialog">
 								<div class="field-row">
-									<p>
-										Which type of key do you need?
-									</p>
+									<p>Which type of key do you need?</p>
 								</div>
 								<div class="field-row">
 									<input id="10" type="radio" name="keyType" checked />
@@ -43,7 +43,7 @@
 								<div
 									id="buildContainer"
 									class="field-row-stacked"
-									style="visibility: hidden;"
+									style="visibility: hidden"
 								>
 									<label for="buildNo">Beta build number:</label>
 									<select id="buildNo">
@@ -69,7 +69,7 @@
 								</section>
 							</div>
 
-							<div id="keyDialog" style="display: none;">
+							<div id="keyDialog" style="display: none">
 								<p>
 									Your <span id="keyDigitNo"></span> &quot;<span
 										class="keyType"
@@ -84,7 +84,7 @@
 								</div>
 							</div>
 
-							<div id="betaDialog" style="display: none;">
+							<div id="betaDialog" style="display: none">
 								<p>
 									Your Beta Site ID &amp; Password are located in the space
 									below. They can be used as a replacement for the credentials
@@ -105,7 +105,7 @@
 							<section
 								id="keyButtons"
 								class="field-row buttons"
-								style="display: none;"
+								style="display: none"
 							>
 								<p class="url">
 									<a
@@ -123,5 +123,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="main.js"></script>
 	</body>
 </html>

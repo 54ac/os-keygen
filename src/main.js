@@ -2,9 +2,9 @@
 
 import "normalize.css";
 import "98.css";
-import "../css/index.css";
-import { generateKey } from "./generateKey";
-import { generateBeta } from "./generateBeta";
+import "./main.css";
+import { generateKey } from "./js/generateKey";
+import { generateBeta } from "./js/generateBeta";
 
 const keyTextBox = document.querySelector("#keyTextBox");
 const betaInput = document.querySelector("#beta");
@@ -72,4 +72,4 @@ document.querySelector("#keyBackButton").onclick = () => {
 };
 
 for (const e of document.querySelectorAll(`input[type="text"]`))
-	e.onclick = el => el.target.setSelectionRange(0, el.target.value.length);
+	e.onclick = (el) => el.target.setSelectionRange(0, el.target.value.length);
