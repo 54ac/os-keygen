@@ -15,8 +15,7 @@
 	"private": true,
 	"browserslist": "defaults",
 	"dependencies": {
-		"98.css": "^0.1.16",
-		"normalize.css": "^8.0.1"
+		"98.css": "^0.1.16"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.13.16",

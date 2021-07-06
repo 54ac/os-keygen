@@ -1,6 +1,5 @@
 "use strict";
 
-import "normalize.css";
 import "98.css";
 import "./main.css";
 import { generateKey } from "./js/generateKey";
