@@ -9,6 +9,7 @@ body {
 	background-color: #008080;
 	user-select: none;
 	hyphens: auto;
+	margin: 0;
 }
 
 #container {
