@@ -9,33 +9,19 @@
 	"repository": "github:rowrawer/os-keygen",
 	"version": "1.1.0",
 	"scripts": {
-		"build": "rd /s /q public && mkdir public && rollup -c",
-		"start": "rd /s /q public && mkdir public && rollup -c -w"
+		"build": "rimraf dist && parcel build src/index.html --no-source-maps",
+		"start": "rimraf dist && parcel src/index.html"
 	},
 	"private": true,
 	"browserslist": "defaults",
 	"dependencies": {
 		"98.css": "^0.1.16"
 	},
+	"@parcel/transformer-css": {
+		"errorRecovery": true
+	},
 	"devDependencies": {
-		"@babel/cli": "^7.13.16",
-		"@babel/core": "^7.14.0",
-		"@babel/preset-env": "^7.14.1",
-		"@rollup/plugin-babel": "^5.2.2",
-		"@rollup/plugin-commonjs": "^19.0.0",
-		"@rollup/plugin-json": "^4.1.0",
-		"@rollup/plugin-node-resolve": "^13.0.0",
-		"browserlist": "^1.0.1",
-		"html-minifier-terser": "^5.1.1",
-		"npm-run-all": "^4.1.5",
-		"postcss": "^8.2.15",
-		"postcss-copy": "^7.1.0",
-		"postcss-preset-env": "^6.7.0",
-		"rollup": "^2.47.0",
-		"rollup-plugin-copy-watch": "^0.0.1",
-		"rollup-plugin-livereload": "^2.0.0",
-		"rollup-plugin-postcss": "^4.0.0",
-		"rollup-plugin-serve": "^1.1.0",
-		"rollup-plugin-terser": "^7.0.2"
+		"parcel": "^2.8.3",
+		"rimraf": "^4.1.2"
 	}
 }

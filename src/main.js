@@ -1,7 +1,6 @@
 "use strict";
 
 import "98.css";
-import "./main.css";
 import { generateKey } from "./js/generateKey";
 import { generateBeta } from "./js/generateBeta";
 
@@ -47,14 +46,12 @@ document.querySelector("#mainNextButton").onclick = () => {
 	} else {
 		const selectedBuild = document.querySelector("#buildNo").value;
 
-		[betaIdTextBox.value, betaPasswordTextBox.value] = generateBeta(
-			selectedBuild
-		);
+		[betaIdTextBox.value, betaPasswordTextBox.value] =
+			generateBeta(selectedBuild);
 
 		document.querySelector("#newKeyButton").onclick = () =>
-			([betaIdTextBox.value, betaPasswordTextBox.value] = generateBeta(
-				selectedBuild
-			));
+			([betaIdTextBox.value, betaPasswordTextBox.value] =
+				generateBeta(selectedBuild));
 
 		mainDialog.style.display = "none";
 		betaDialog.style.display = "";

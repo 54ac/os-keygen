@@ -2,7 +2,7 @@ import calcMD4 from "./md4";
 import { getRandomInt } from "./getRandomInt";
 import { sig } from "./sig";
 
-export const generateBeta = build => {
+export const generateBeta = (build) => {
 	// from https://github.com/dgurney/chicagokey/blob/master/pkg/generator/generate.go
 	// site id is any 6-digit number
 	const betaSiteId = sig + getRandomInt(0, 9, 4);

@@ -2,8 +2,8 @@ import { getRandomInt } from "./getRandomInt";
 import { sig } from "./sig";
 
 // from so
-const sumDigits = digits =>
-	[...digits].map(e => parseInt(e)).reduce((a, b) => a + b);
+const sumDigits = (digits) =>
+	[...digits].map((e) => parseInt(e)).reduce((a, b) => a + b);
 
 const getMod7 = (zero = false) => {
 	let number = "";
@@ -36,10 +36,7 @@ const dateNo = () => {
 	).slice(-3);
 
 	const yearNo = (() => {
-		const third = today
-			.getFullYear()
-			.toString()
-			.slice(-1);
+		const third = today.getFullYear().toString().slice(-1);
 
 		if (third >= 5 && third <= 9) {
 			return "9" + third;
@@ -57,7 +54,7 @@ const dateNo = () => {
 	return "" + dayNo + yearNo;
 };
 
-export const generateKey = type => {
+export const generateKey = (type) => {
 	const key = [];
 
 	// from https://gurney.dev/posts/mod7/
