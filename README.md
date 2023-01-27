@@ -20,7 +20,7 @@ Reliving the glory days. Making a fully functional keygen and familiarizing myse
 
 ### Where can I use this?
 
-**[Check it out here.](https://rowrawer.cf:5454/)**
+**[Check it out here.](https://rowrawer.com:5454/)**
 
 ### How do I launch this myself?
 
