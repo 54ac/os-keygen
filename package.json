@@ -2,11 +2,11 @@
 	"name": "os-keygen",
 	"description": "An old-school key generator for outdated operating systems made in Javascript.",
 	"author": {
-		"name": "rowrawer",
-		"email": "rowrawer@gmail.com",
-		"url": "https://github.com/rowrawer"
+		"name": "54ac",
+		"email": "me@54ac.bio",
+		"url": "https://github.com/54ac"
 	},
-	"repository": "github:rowrawer/os-keygen",
+	"repository": "github:54ac/os-keygen",
 	"version": "1.1.1",
 	"scripts": {
 		"build": "rimraf dist && parcel build src/index.html --no-source-maps",
