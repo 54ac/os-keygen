@@ -20,7 +20,7 @@ Reliving the glory days. Making a fully functional keygen and familiarizing myse
 
 ### Where can I use this?
 
-**[Check it out here.](https://54ac.bio:5454/)**
+**[Check it out here.](https://54ac.ovh:5454/)**
 
 ### How do I launch this myself?
 
