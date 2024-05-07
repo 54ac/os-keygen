@@ -3,6 +3,7 @@
 	font-family: "IBM EGA 8x14";
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 :root {
