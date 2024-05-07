@@ -1,5 +1,5 @@
 // from mdn
-export const getRandomInt = (min, max, no = 1) => {
+const getRandomInt = (min: number, max: number, no = 1) => {
 	let number = "";
 
 	for (let i = 0; i < no; i++) {
@@ -10,3 +10,5 @@ export const getRandomInt = (min, max, no = 1) => {
 
 	return number;
 };
+
+export default getRandomInt;

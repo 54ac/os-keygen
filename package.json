@@ -1,37 +1,41 @@
 {
 	"name": "os-keygen",
-	"description": "An old-school key generator for outdated operating systems made in Javascript.",
+	"private": true,
+	"version": "2.0.0",
+	"type": "module",
+	"description": "An old-school key generator for outdated operating systems made in Svelte/TypeScript.",
 	"author": {
 		"name": "54ac",
-		"email": "54acbio@gmail.com",
+		"email": "me@54ac.ovh",
 		"url": "https://github.com/54ac"
 	},
 	"repository": "github:54ac/os-keygen",
-	"version": "1.1.1",
 	"scripts": {
-		"build": "rimraf dist && parcel build src/index.html --no-source-maps",
-		"start": "rimraf dist && parcel src/index.html"
-	},
-	"private": true,
-	"browserslist": "defaults",
-	"dependencies": {
-		"98.css": "^0.1.16"
-	},
-	"@parcel/transformer-css": {
-		"errorRecovery": true
+		"start": "vite --open",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json"
 	},
 	"devDependencies": {
-		"@babel/eslint-parser": "^7.18.9",
-		"@babel/eslint-plugin": "^7.19.1",
-		"@parcel/babel-preset-env": "^2.8.3",
-		"eslint": "^8.21.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"parcel": "^2.8.3",
-		"prettier": "^2.8.1",
-		"rimraf": "^4.1.2",
-		"stylelint": "^15.0.0",
-		"stylelint-config-recommended": "^10.0.1",
-		"stylelint-config-standard": "^30.0.1"
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"@tsconfig/svelte": "^5.0.2",
+		"@typescript-eslint/eslint-plugin": "^7.8.0",
+		"@typescript-eslint/parser": "^7.8.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.38.0",
+		"prettier": "^3.2.5",
+		"stylelint": "^16.5.0",
+		"stylelint-config-standard": "^36.0.0",
+		"svelte": "^4.2.12",
+		"svelte-check": "^3.6.7",
+		"svelte-eslint-parser": "^0.35.0",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2",
+		"vite": "^5.2.0"
+	},
+	"dependencies": {
+		"98.css": "^0.1.20",
+		"js-md4": "^0.3.2"
 	}
 }

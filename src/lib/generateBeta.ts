@@ -1,11 +1,11 @@
-import calcMD4 from "./md4";
-import { getRandomInt } from "./getRandomInt";
-import { sig } from "./sig";
+import md4 from "js-md4";
+import getRandomInt from "./getRandomInt";
 
-export const generateBeta = (build) => {
+export const generateBeta = (build: string) => {
 	// from https://github.com/dgurney/chicagokey/blob/master/pkg/generator/generate.go
+
 	// site id is any 6-digit number
-	const betaSiteId = sig + getRandomInt(0, 9, 4);
+	const betaSiteId = "54" + getRandomInt(0, 9, 4);
 	const betaPassword = (() => {
 		// the first 4 characters are any positive number up to 65535 (unsigned 16-bit) in hex
 		const first = ("000" + parseInt(getRandomInt(1, 65535)).toString(16)).slice(
@@ -41,21 +41,21 @@ export const generateBeta = (build) => {
 		})();
 		if (!buildString) return "ERROR";
 
-		// md4 hash is made from a concatenated string
-		const hash = calcMD4(betaSiteId + first + buildString);
+		// md4 hash is made from this concatenated string
+		const hash = md4(betaSiteId + first + buildString);
 		// the last 4 characters are the first 2 hex values of the resulting hash, in reverse
 		const third = [hash.slice(0, 2), hash.slice(2, 4)].reverse().join("");
 
 		// the middle character is mod 9 of the sum of ascii codes
 		let second = 0;
 		for (const n of betaSiteId) {
-			second += n.charCodeAt();
+			second += n.charCodeAt(0);
 		}
 		for (const n of first) {
-			second += n.charCodeAt();
+			second += n.charCodeAt(0);
 		}
 		for (const n of third) {
-			second += n.charCodeAt();
+			second += n.charCodeAt(0);
 		}
 
 		// include leading zeroes just in case

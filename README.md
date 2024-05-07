@@ -2,16 +2,17 @@
 
 ### What is this?
 
-This is an old-school key generator for outdated operating systems from the 90s. Generates 10-digit and 11-digit CD keys, 20-digit OEM Product IDs, and Beta Site IDs with passwords. Made in Javascript.
+This is an old-school key generator for outdated operating systems from the 90s. Generates 10-digit and 11-digit CD keys, 20-digit OEM Product IDs, and Beta Site IDs with passwords. Made in ~~Javascript~~ Svelte/TypeScript.
 
 ### What are some of the main features?
 
 - Uses [98.css](https://github.com/jdan/98.css/) and the [IBM EGA 8x14](https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_ega_8x14) font for a realistic depiction of the UI of the days of old,
-- Uses vanilla Javascript and [md4.js](http://lig-membres.imag.fr/donsez/cours/exemplescourstechnoweb/js_securehash/md4src.html) to generate the requested keys (fully client-side).
+- Uses [js-md4](https://github.com/emn178/js-md4) to generate the requested keys (fully client-side),
+- Uses Svelte and TypeScript to present the UI while maintaining relatively tidy and simple code.
 
 ### What's the point?
 
-Reliving the glory days. Making a fully functional keygen and familiarizing myself with 98.css.
+Reliving the glory days. Making a fully functional keygen and familiarizing myself with 98.css and Svelte.
 
 ### How do I use this?
 

@@ -1,0 +1,46 @@
+@font-face {
+	src: url("/fonts/Web437_IBM_EGA_8x14.woff") format("woff");
+	font-family: "IBM EGA 8x14";
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	font-synthesis: none;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 11px;
+	background-color: #008080;
+	user-select: none;
+	hyphens: auto;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+@media screen and (min-resolution: 120dpi) {
+	#app {
+		transform: scale(2);
+	}
+}
+
+input[type="text"] {
+	font-family: "IBM EGA 8x14", monospace;
+	font-size: 14px;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	width: 70%;
+}
+
+input:read-only {
+	background-color: #fff !important;
+	color: #222 !important;
+}
