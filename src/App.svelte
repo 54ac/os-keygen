@@ -41,6 +41,12 @@
 		flex-direction: column;
 	}
 
+	@media screen and (min-resolution: 120dpi) {
+		.window {
+			transform: scale(2);
+		}
+	}
+
 	.window-body {
 		height: 100%;
 	}
