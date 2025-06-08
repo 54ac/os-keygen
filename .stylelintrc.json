@@ -1,8 +1,6 @@
 {
-	"extends": [
-		"stylelint-config-standard"
-	],
+	"extends": ["stylelint-config-standard", "stylelint-config-html/svelte"],
 	"rules": {
-		"indentation": "tab"
+		"selector-id-pattern": null
 	}
 }

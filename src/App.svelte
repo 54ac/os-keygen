@@ -41,7 +41,7 @@
 		flex-direction: column;
 	}
 
-	@media screen and (min-resolution: 120dpi) {
+	@media (resolution >= 120dpi) and (orientation: landscape) {
 		.window {
 			transform: scale(2);
 		}

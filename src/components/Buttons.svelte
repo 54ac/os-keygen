@@ -31,6 +31,3 @@
 		<button on:click={handleNewKeyButton}>New Key</button>
 	{/if}
 </section>
-
-<style>
-</style>
