@@ -41,12 +41,6 @@
 		flex-direction: column;
 	}
 
-	@media (resolution >= 120dpi) and (orientation: landscape) {
-		.window {
-			transform: scale(2);
-		}
-	}
-
 	.window-body {
 		height: 100%;
 	}
